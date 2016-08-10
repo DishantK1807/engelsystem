@@ -8,9 +8,7 @@ dist: trusty
 sudo: required
 
 before_script:
-  - sudo apt-get install mysql-client-core
-  - sudo apt-get install mysql-server
-  - sudo apt-get install mysql-client
+  - sudo apt-get install mysql-client-core-5.6
   - mysql -u root -e "create database engelsystem;"
   - mysql -u root -e "use engelsystem;"
   - mysql -u root -e "engelsystem < db/install.sql;"
